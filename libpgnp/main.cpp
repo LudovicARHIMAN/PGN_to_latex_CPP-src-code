@@ -2,11 +2,13 @@
 #include <iostream>
 using namespace pgnp;
 
+
+
 int main(){
     PGN pgn;
-    pgn.FromFile("example.pgn");
+    pgn.FromFile("Conv/Adams.pgn");
     pgn.ParseNextGame();
-
+    
     
 
     // Recuperer tout les tags 
@@ -21,11 +23,23 @@ int main(){
     std::cout << "WhiteElo is: " << pgn.GetTagValue("WhiteElo") << std::endl;
     std::cout << "BlackElo is: " << pgn.GetTagValue("BlackElo") << std::endl;
     std::cout << "ECO is: " << pgn.GetTagValue("ECO") << std::endl;
-    
 
+    // Recuperer les coups de la partie 
 
     HalfMove *m = new HalfMove();
     pgn.GetMoves(m);
-    std::cout << "First move is: " << m->move << std::endl;
+
+    for ( int i = 0; i < m->GetLength() ; i++)
+    {
+       std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
+    }
+    
+    // Recuperer les commentaires
+
+    
+
+    
+    
+    
     return(0);
 }
