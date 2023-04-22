@@ -6,7 +6,7 @@ using namespace pgnp;
 
 int main(){
     PGN pgn;
-    pgn.FromFile("Conv/Adams.pgn");
+    pgn.FromFile("Conv/hartwig.pgn");
     pgn.ParseNextGame();
     
     
@@ -20,9 +20,12 @@ int main(){
     std::cout << "White is: " << pgn.GetTagValue("White") << std::endl;
     std::cout << "Black is: " << pgn.GetTagValue("Black") << std::endl;
     std::cout << "Result is: " << pgn.GetTagValue("Result") << std::endl;
+    /*
     std::cout << "WhiteElo is: " << pgn.GetTagValue("WhiteElo") << std::endl;
     std::cout << "BlackElo is: " << pgn.GetTagValue("BlackElo") << std::endl;
     std::cout << "ECO is: " << pgn.GetTagValue("ECO") << std::endl;
+    */
+
 
     // Recuperer les coups de la partie 
 
@@ -31,11 +34,24 @@ int main(){
 
     for ( int i = 0; i < m->GetLength() ; i++)
     {
-       std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
+       std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl; s
+       
+
+       // Recuperer les commentaire
+        if (!m->GetHalfMoveAt(i)->comment.empty())
+        {
+             std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
+                       
+        }
+        
+
     }
     
-    // Recuperer les commentaires
+    
 
+
+    
+    
     
 
     
