@@ -1,0 +1,37 @@
+* {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/* Style pour le formulaire */
+form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Style pour les boutons */
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style pour la zone de texte */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+

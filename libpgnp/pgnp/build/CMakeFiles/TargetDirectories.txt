@@ -1,0 +1,6 @@
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles/pgnp.dir
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles/edit_cache.dir
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles/rebuild_cache.dir
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/CMakeFiles/edit_cache.dir
+/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/CMakeFiles/rebuild_cache.dir
