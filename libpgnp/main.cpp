@@ -24,7 +24,8 @@ int main(){
     std::cout << "Black is: " << pgn.GetTagValue("Black") << std::endl;
     std::cout << "Result is: " << pgn.GetTagValue("Result") << std::endl;
     
-    //Tags optionnels 
+    //Tags optionnels (existance à Tester)
+    
     
     
     /*
@@ -39,7 +40,7 @@ int main(){
     HalfMove *m = new HalfMove();
     pgn.GetMoves(m);
     
-    /*
+    
     for ( int i = 0; i < m->GetLength() ; i++){
        std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
        
@@ -52,19 +53,20 @@ int main(){
 
     }
     
-    */
-    // Recuperer les variations
+    
+    // Recuperer les variations (à fix)
 
     for (int v = 0 ; v < m->variations.size() ; v++){
         
-        
-        std::cout<< "var" << m->GetHalfMoveAt(v)->variations[v] << std::endl;
-        
-                                 
+        if (m->variations.size() != 0) {
+        std::cout<< "comment" << m->GetHalfMoveAt(v)->variations[v]->comment << std::endl;
+        //std::cout<< "move" << m->GetHalfMoveAt(v)->variations[v]->NAG << std::endl;
+        std::cout<< "NAG" << m->GetHalfMoveAt(v)->variations[v]->move << std::endl;                         
     }
 
 
 
+    
     return(0);
 
 }
