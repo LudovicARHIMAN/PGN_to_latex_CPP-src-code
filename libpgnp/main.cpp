@@ -32,14 +32,12 @@ int main(){
     HalfMove *m = new HalfMove();
     pgn.GetMoves(m);
 
-    for ( int i = 0; i < m->GetLength() ; i++)
-    {
-       std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl; s
+    for ( int i = 0; i < m->GetLength() ; i++){
+       std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
        
 
        // Recuperer les commentaire
-        if (!m->GetHalfMoveAt(i)->comment.empty())
-        {
+        if (!m->GetHalfMoveAt(i)->comment.empty()){
              std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
                        
         }
