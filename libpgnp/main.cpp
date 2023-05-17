@@ -12,10 +12,13 @@ using namespace pgnp;
 
 int main(){
     
+    std::string outputPath = "/var/www/html/Convert/libpgnp/converted/file.tex"; // Chemin où le fichier sera enregistré
 
-
+    std::ofstream outfile(outputPath);
+    std::stringstream buffer;
+    
     PGN pgn;
-    pgn.FromFile("Conv/Adams.pgn");
+    pgn.FromFile("tmp/Adams.pgn");
     
     while (true)
     {   
@@ -31,10 +34,6 @@ int main(){
             break;
         }
         
-        std::string outputPath = "/var/www/html/Convert/libpgnp/tmp"; // Chemin où le fichier sera enregistré
-
-        std::ofstream outfile(outputPath);
-        std::stringstream buffer;
 
         
 
@@ -137,13 +136,13 @@ int main(){
         
 
 
-
         
-
+        
 
     }
     
-    
+    outfile << buffer.str();
+
     return(0);
 
     
