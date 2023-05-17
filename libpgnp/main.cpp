@@ -50,79 +50,42 @@ int main(){
         << "\\usepackage{xskak}\n"
         << "\\usepackage[top=1.5cm, bottom=2cm, left=1.5cm, right=1cm,headheight=15pt]{geometry}\n"
         << "\\usepackage{adjmulticol}\n"
-        << "\\usepackage{ragged2e}\n";
+        << "\\usepackage{ragged2e}\n"
+        << "\\begin{document}\n";
 
 
         
 
 
 
-        // Recuperer tout les tags obligatoires
+        // Recuperer tout les 7 tags obligatoires
         
         try{
-            std::cout << "Event is: " << pgn.GetTagValue("Event") << std::endl;
+            pgn.STRCheck();
         }
 
-        catch(const InvalidTagName& e) {
+        catch(const STRCheckFailed& e) {
             break;
         }
+        
+       
+        buffer
+        << "\\chessevent{" << pgn.GetTagValue("Event") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("Site") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("Date") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("Round") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("White") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("Black") << "}\n"
+        << "\\chessevent{" << pgn.GetTagValue("Result") << "}\n";
 
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("Site") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
-
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("Date") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
-
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("Round") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
-
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("White") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("Black") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
-
-        try{
-            std::cout << "Event is: " << pgn.GetTagValue("Result") << std::endl;
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
+      
 
         //Tags optionnels 
 
         try{
-            std::cout << "Event is: " << pgn.GetTagValue("WhiteElo") << std::endl;
+            buffer
+            << "\\chessevent{" << pgn.GetTagValue("WhiteElo") << "}\n";
+            
         }
 
         catch(const InvalidTagName& e) {
@@ -130,7 +93,9 @@ int main(){
         }
         
         try{
-            std::cout << "Event is: " << pgn.GetTagValue("BlackElo") << std::endl;
+            buffer
+            << "\\chessevent{" << pgn.GetTagValue("BlackElo") << "}\n";
+            
         }
 
         catch(const InvalidTagName& e) {
@@ -138,7 +103,9 @@ int main(){
         }
         
         try{
-            std::cout << "Event is: " << pgn.GetTagValue("ECO") << std::endl;
+            buffer
+            << "\\chessevent{" << pgn.GetTagValue("ECO") << "}\n";
+            
         }
 
         catch(const InvalidTagName& e) {
