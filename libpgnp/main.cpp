@@ -1,7 +1,11 @@
 #include "PGN.hpp"
 #include <iostream>
-#include <sstream>
 #include <fstream>
+#include <sstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 using namespace pgnp;
 
 
@@ -9,12 +13,13 @@ using namespace pgnp;
 int main(){
     
 
+
     PGN pgn;
     pgn.FromFile("Conv/Adams.pgn");
     
     while (true)
     {
-
+        
         // Parser toutes les parties (et pas une seule partie)
 
         try
@@ -26,8 +31,34 @@ int main(){
             break;
         }
         
-        // Recuperer tout les tags obligatoires
+        std::string outputPath = "/var/www/html/Convert/libpgnp/Conv";
 
+        std::ofstream outfile(outputPath);
+        std::stringstream buffer;
+
+
+
+        // En-tete du fichier latex
+
+        buffer
+        << "\\documentclass{article}\n"
+        << "\\usepackage{multicol}\n"
+        << "\\usepackage{array}\n"
+        << "\\usepackage{makeidx}\n"
+        << "\\usepackage[skaknew]{chessfss}\n"
+        << "\\usepackage{texmate}\n"
+        << "\\usepackage{xskak}\n"
+        << "\\usepackage[top=1.5cm, bottom=2cm, left=1.5cm, right=1cm,headheight=15pt]{geometry}\n"
+        << "\\usepackage{adjmulticol}\n"
+        << "\\usepackage{ragged2e}\n";
+
+        
+
+
+
+
+        // Recuperer tout les tags obligatoires
+        
         try{
             std::cout << "Event is: " << pgn.GetTagValue("Event") << std::endl;
         }
@@ -135,7 +166,7 @@ int main(){
 
         }
 
-        
+
 
         
 
