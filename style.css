@@ -5,6 +5,7 @@
 
 
 
+
 /* Style pour le formulaire */
 form {
     width: 400px;
@@ -16,11 +17,10 @@ form {
 }
 
 /* Style pour les boutons */
-input[type="submit"],
-input[type="reset"] {
+input[type="submit"], input[type="reset"] {
     padding: 8px 16px;
     margin-top: 10px;
-    background-color: #007bff;
+    background-color: #00ffff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -34,4 +34,3 @@ input[type="file"] {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
-
