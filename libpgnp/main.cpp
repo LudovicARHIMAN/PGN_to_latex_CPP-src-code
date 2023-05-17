@@ -35,8 +35,6 @@ int main(){
         }
         
 
-        
-
         // En-tete du fichier latex
 
         buffer
@@ -53,9 +51,6 @@ int main(){
         << "\\begin{document}\n";
 
 
-        
-
-
 
         // Recuperer tout les 7 tags obligatoires
         
@@ -67,7 +62,8 @@ int main(){
             break;
         }
         
-       
+
+
         buffer
         << "\\chessevent{" << pgn.GetTagValue("Event") << "}\n"
         << "\\chessevent{" << pgn.GetTagValue("Site") << "}\n"
@@ -77,7 +73,7 @@ int main(){
         << "\\chessevent{" << pgn.GetTagValue("Black") << "}\n"
         << "\\chessevent{" << pgn.GetTagValue("Result") << "}\n";
 
-      
+        
 
         //Tags optionnels 
 
@@ -110,6 +106,8 @@ int main(){
         catch(const InvalidTagName& e) {
             break;
         }
+
+        
         
         
 
@@ -131,9 +129,6 @@ int main(){
             }
 
         }
-
-
-        
 
 
         
