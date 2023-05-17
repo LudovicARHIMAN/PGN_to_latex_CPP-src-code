@@ -18,7 +18,7 @@ int main(){
     pgn.FromFile("Conv/Adams.pgn");
     
     while (true)
-    {
+    {   
         
         // Parser toutes les parties (et pas une seule partie)
 
@@ -31,12 +31,12 @@ int main(){
             break;
         }
         
-        std::string outputPath = "/var/www/html/Convert/libpgnp/Conv";
+        std::string outputPath = "/var/www/html/Convert/libpgnp/tmp"; // Chemin où le fichier sera enregistré
 
         std::ofstream outfile(outputPath);
         std::stringstream buffer;
 
-
+        
 
         // En-tete du fichier latex
 
@@ -52,8 +52,8 @@ int main(){
         << "\\usepackage{adjmulticol}\n"
         << "\\usepackage{ragged2e}\n";
 
-        
 
+        
 
 
 
@@ -165,6 +165,9 @@ int main(){
             }
 
         }
+
+
+        
 
 
 
