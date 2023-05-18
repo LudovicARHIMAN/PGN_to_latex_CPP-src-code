@@ -1,32 +1,74 @@
 <?php
-// Vérifie si un fichier a été soumis
-if (isset($_FILES['pgn_file'])) {
-    $file = $_FILES['pgn_file'];
+    // Vérifie si un fichier a été soumis
+    if (isset($_FILES['pgn_file'])) {
+        $file = $_FILES['pgn_file'];
+        
+        // Vérifie si le fichier a été téléchargé sans erreur
+        if ($file['error'] === UPLOAD_ERR_OK) {
+            $filename = $file['name'];
+            $tmpFilePath = $file['tmp_name'];
+            $name = pathinfo($filename, PATHINFO_FILENAME);
+            
+            $conv_name = "$name".".tex" ; // nom du fichier convertie qui serra donné en argument au convertisseur
 
-    // Vérifie si le fichier a été téléchargé sans erreur
-    if ($file['error'] === UPLOAD_ERR_OK) {
-        $filename = $file['name'];
-        $tmpFilePath = $file['tmp_name'];
+            
+            
+            // Définir le dossier de destination
+            $destinationFolder = '/var/www/html/Convert/libpgnp/tmp/';
 
-        // Définir le dossier de destination
-        $destinationFolder = '/var/www/html/Convert/pgn_files';
+            // Déplacer le fichier téléchargé vers le dossier de destination
+            $destinationPath = $destinationFolder . $filename;
+            if (move_uploaded_file($tmpFilePath, $destinationPath)) {
+                echo "Le fichier a été téléchargé avec succès.";
+                
 
-        // Déplacer le fichier téléchargé vers le dossier de destination
-        $destinationPath = $destinationFolder . $filename;
-        if (move_uploaded_file($tmpFilePath, $destinationPath)) {
-            echo "Le fichier a été téléchargé avec succès.";
-
-            // Appeler libpgn pour développer le fichier en LaTeX
-            exec("libpgnp " . $destinationPath . " > " . $destinationFolder . "output.tex");
-
-            echo "Le fichier a été développé en LaTeX avec succès.";
+                // Appeler libpgn pour développer le fichier en LaTeX 
+                //exec("libpgnp " . $destinationPath . " > " . $destinationFolder . "output.tex");
+                
+                //echo "Le fichier a été développé en LaTeX avec succès.";
+            } else {
+                echo "Une erreur s'est produite lors du déplacement du fichier.";
+            }
         } else {
-            echo "Une erreur s'est produite lors du déplacement du fichier.";
+            echo "Une erreur s'est produite lors du téléchargement du fichier.";
         }
-    } else {
-        echo "Une erreur s'est produite lors du téléchargement du fichier.";
     }
-}
+    
+    $targetDirectory = '/var/www/html/Convert/libpgnp/converted';
+
+    // Get the list of files in the target directory
+    $files = scandir($targetDirectory);
+
+    // Exclude . and .. directories from the list
+    $files = array_diff($files, array('.', '..'));
+
+    // Output the list of files
+    /*
+    foreach ($files as $file) {
+        echo $file . "<br>";
+    }
+    */
+    /*
+
+    $fileUrl = 'http://example.com/path/to/file.pdf';  // URL of the file you want to download
+    $savePath = '/path/to/folder/file.pdf';  // Path to save the downloaded file
+
+    // Download the file using cURL
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $fileUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $fileData = curl_exec($ch);
+    curl_close($ch);
+
+    // Save the file to the specified location
+    file_put_contents($savePath, $fileData);
+
+    echo 'File downloaded and saved successfully.';
+    */
+    
+
+
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +76,7 @@ if (isset($_FILES['pgn_file'])) {
 <head>
     <title>Upload PGN</title>
     <script src="https://cdn.tailwindcss.com/"></script>
+    <link rel="shortcut icon" href="/icons/icon.png" type="image/x-icon">
 </head>
 <body class="bg-grey-200"> <!-- Définit une couleur de fond gris clair -->
     <div class="flex justify-center items-center min-h-screen"> <!-- Crée un conteneur qui s'étend sur au moins la hauteur de l'écran -->
@@ -49,11 +92,3 @@ if (isset($_FILES['pgn_file'])) {
     </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
