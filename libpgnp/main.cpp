@@ -10,14 +10,30 @@ using namespace pgnp;
 
 
 
-int main(){
-    
+int main(int argc, char* argv[]){
+
+    if (argc < 3) {
+        std::cout << "Usage: ./your_program <input_file> <output_file>\n";
+        return 1;
+    }
+
+
+
+    std::string inputFileName = argv[1];
+    std::string outputFileName = argv[2];
+
+    std::cout << "Input file: " << inputFileName << std::endl;
+    std::cout << "Output file: " << outputFileName << std::endl;
+
+    // chemin du ficher en sortie
     std::string outputPath = "/var/www/html/Convert/libpgnp/converted/file.tex"; // Chemin où le fichier sera enregistré
 
+
+    // creation du buffer en definissant où les donnes du buffer vont être écrites 
     std::ofstream outfile(outputPath);
     std::stringstream buffer;
     
-
+    
 
     PGN pgn;
     pgn.FromFile("tmp/Adams.pgn");
@@ -138,24 +154,30 @@ int main(){
         <<"\\newchessgame[id=main]\n"
         <<"\\xskakset{style=styleC}\n";
         
-        
+
 
         for ( int i = 0; i < m->GetLength() ; i++){
 
             
-
+            
             std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
         
             
             // Recuperer les commentaires
             if (!m->GetHalfMoveAt(i)->comment.empty()){
-                std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
+                
+
+                buffer
+                << "\\xskakcomment{\\small\texttt\\justifying{\textcolor{darkgray}{~ " << m->GetHalfMoveAt(i)->comment  << "}}}\n";
+
+
+
                         
             }
         
         }
         
-        
+         
         
 
 
@@ -163,7 +185,7 @@ int main(){
     
     outfile << buffer.str();
 
-    return(0);
+    return 0;
 
     
 
