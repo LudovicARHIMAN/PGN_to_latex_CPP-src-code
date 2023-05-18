@@ -1,4 +1,4 @@
-# PGN to latex ![images](https://icons8.com/icon/F9pZpgROXdv3/chess-pawn)
+# PGN to latex 
 
 
 Convert a PGN (Portable Game Notion) file to latex file.
