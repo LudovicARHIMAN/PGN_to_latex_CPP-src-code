@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    
+        
 
     std::string inputFileName = argv[1];
     std::string outputFileName = argv[2];
