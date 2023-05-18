@@ -10,13 +10,15 @@ using namespace pgnp;
 
 
 
-int main(){
+int main(char in_file, char out_file){
     
     std::string outputPath = "/var/www/html/Convert/libpgnp/converted/file.tex"; // Chemin où le fichier sera enregistré
 
     std::ofstream outfile(outputPath);
     std::stringstream buffer;
     
+
+
     PGN pgn;
     pgn.FromFile("tmp/Adams.pgn");
     
@@ -34,6 +36,7 @@ int main(){
             break;
         }
         
+        
 
         // En-tete du fichier latex
 
@@ -50,9 +53,9 @@ int main(){
         << "\\usepackage{ragged2e}\n"
         << "\\begin{document}\n";
 
+        
 
-
-        // Recuperer tout les 7 tags obligatoires
+        // Recuperer les 7 tags obligatoires
         
         try{
             pgn.STRCheck();
@@ -62,7 +65,7 @@ int main(){
             break;
         }
         
-
+        
 
         buffer
         << "\\chessevent{" << pgn.GetTagValue("Event") << "}\n"
@@ -73,7 +76,7 @@ int main(){
         << "\\chessevent{" << pgn.GetTagValue("Black") << "}\n"
         << "\\chessevent{" << pgn.GetTagValue("Result") << "}\n";
 
-        
+
 
         //Tags optionnels 
 
@@ -108,8 +111,6 @@ int main(){
         }
 
         
-        
-        
 
         // Recuperer les coups de la partie 
 
@@ -119,20 +120,21 @@ int main(){
         
         
         for ( int i = 0; i < m->GetLength() ; i++){
-        std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
-        
 
-        // Recuperer les commentaires
+            std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
+        
+            
+            // Recuperer les commentaires
             if (!m->GetHalfMoveAt(i)->comment.empty()){
                 std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
                         
             }
-
+        
         }
-
-
         
         
+        
+
 
     }
     
