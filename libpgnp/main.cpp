@@ -110,17 +110,36 @@ int main(){
             break;
         }
 
+        try{
+            buffer
+            << "\\chessevent{" << pgn.GetTagValue("PlyCount") << "}\n";
+            
+        }
+
+        catch(const InvalidTagName& e) {
+            break;
+        }
         
+
 
         // Recuperer les coups de la partie 
 
         HalfMove *m = new HalfMove();
         pgn.GetMoves(m);
         
+        // En-tête du jeu actuel 
+
+        buffer 
+        <<"\\makegametitle\n"
+        <<"\\begin{multicols}{2}\n"
+        <<"\\noindent"
+        <<"\\newchessgame[id=main]\n"
+        <<"\\xskakset{style=styleC}\n";
         
         
         for ( int i = 0; i < m->GetLength() ; i++){
 
+            
             std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
         
             
