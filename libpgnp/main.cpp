@@ -127,6 +127,8 @@ int main(){
         HalfMove *m = new HalfMove();
         pgn.GetMoves(m);
         
+        
+
         // En-tête du jeu actuel 
 
         buffer 
@@ -137,9 +139,11 @@ int main(){
         <<"\\xskakset{style=styleC}\n";
         
         
+
         for ( int i = 0; i < m->GetLength() ; i++){
 
             
+
             std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
         
             
