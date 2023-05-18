@@ -10,7 +10,7 @@ using namespace pgnp;
 
 
 
-int main(char in_file, char out_file){
+int main(){
     
     std::string outputPath = "/var/www/html/Convert/libpgnp/converted/file.tex"; // Chemin où le fichier sera enregistré
 
@@ -65,7 +65,7 @@ int main(char in_file, char out_file){
             break;
         }
         
-        
+
 
         buffer
         << "\\chessevent{" << pgn.GetTagValue("Event") << "}\n"
