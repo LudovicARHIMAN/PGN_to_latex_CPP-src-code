@@ -1,6 +1,6 @@
 # PGN to latex 
 
 
-Convert a PGN (Portable Game Notion) to latex file 
+Convert a PGN (Portable Game Notion) file to latex file.
 
-This convert a PGN file with a WebUI and convert it to latex with a C++ code  
+This convert a PGN file with a WebUI and convert it into a latex with a C++ code  
