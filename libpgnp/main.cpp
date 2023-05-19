@@ -159,29 +159,83 @@ int main(){
         HalfMove *m = new HalfMove();
         pgn.GetMoves(m);
         
-        
+
+        int j = 0;
+        int count = 1;
 
         for ( int i = 0; i < m->GetLength() ; i++){
-            
-            
-            
+            j++;
+            if (j==1) {
+                
+                buffer
+                << "\\mainline{" << count << ". " ;
+                
+                
+            }
+
             buffer
-            << "\\mainline{" << i <<"." << m->GetHalfMoveAt(i)->move << " " << m->GetHalfMoveAt(i)->move << "}\n"
-            << "\\scalebox{0.90}{\\chessboard}\n"; 
+            << m->GetHalfMoveAt(i)->move << " ";
             
+           
+            
+            if (j != 8) {
+
+
+                if(m->GetHalfMoveAt(i)->isBlack==1){
+                count+=1;
+                
+                buffer
+                << count << ". " ;
+                }   
+
+            }
+
+            if (j==8){
+                
+                buffer
+                << "}\n";
+            }
 
             
+            if (i==(m->GetLength())-1) {
+                buffer
+                << "}\n";
+            }
+
+
+
+
+                
             /*
             std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
             */
+            
+            
+            // << "\\mainline{" << i <<"." << m->GetHalfMoveAt(i)->move << "}\n"
+            
+            
+            
+            if (j==8) {
+                
+                buffer
+                << "\\scalebox{0.90}{\\chessboard}\n"; 
 
 
 
-            // Recuperer les commentaires
-            if (!m->GetHalfMoveAt(i)->comment.empty()){
-                std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
-                        
+                // Recuperer les commentaires
+                if (!m->GetHalfMoveAt(i)->comment.empty()){
+                    std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
+                            
+                }
+
+                j=0;
+
+
+
+
             }
+            
+           
 
         }
 
@@ -189,7 +243,7 @@ int main(){
 
     // Fin du document 
     buffer 
-    << "\\end{document}\n";
+    << "\\newpage\\end{document}";
 
 
     outfile << buffer.str();
