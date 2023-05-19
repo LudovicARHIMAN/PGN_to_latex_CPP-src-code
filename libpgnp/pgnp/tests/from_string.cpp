@@ -1,7 +1,4 @@
-if (!m->GetHalfMoveAt(i)->comment.empty()){
-             std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
-                       
-        }#include "pgnp.hpp"
+#include "pgnp.hpp"
 #include <catch_amalgamated.hpp>
 
 using namespace pgnp;

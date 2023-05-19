@@ -1,7 +1,7 @@
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o: \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.cpp \
+ /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.cpp \
  /usr/include/stdc-predef.h \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.hpp \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

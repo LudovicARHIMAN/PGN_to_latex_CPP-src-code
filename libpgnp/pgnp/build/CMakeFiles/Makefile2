@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp
+CMAKE_SOURCE_DIR = /var/www/html/Convert/project_pgn/pgnp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build
+CMAKE_BINARY_DIR = /var/www/html/Convert/project_pgn/pgnp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ libs/chess-move-interface/clean: libs/chess-move-interface/CMakeFiles/ChessMoveI
 CMakeFiles/pgnp.dir/all: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgnp.dir/build.make CMakeFiles/pgnp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgnp.dir/build.make CMakeFiles/pgnp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=3,4,5,6 "Built target pgnp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=3,4,5,6 "Built target pgnp"
 .PHONY : CMakeFiles/pgnp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgnp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pgnp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles 0
 .PHONY : CMakeFiles/pgnp.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/pgnp.dir/clean:
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=1,2 "Built target ChessMoveInterface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=1,2 "Built target ChessMoveInterface"
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/all
 
 # Build rule for subdir invocation for target.
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles 0
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule
 
 # Convenience name for target.

@@ -1,8 +1,8 @@
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.o: \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/HalfMove.cpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/HalfMove.cpp \
  /usr/include/stdc-predef.h \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/HalfMove.hpp \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/Types.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/HalfMove.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/Types.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -154,4 +154,4 @@ CMakeFiles/pgnp.dir/src/HalfMove.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/includes/CMI.hpp
+ /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface/includes/CMI.hpp

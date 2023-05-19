@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp
+CMAKE_SOURCE_DIR = /var/www/html/Convert/project_pgn/pgnp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build
+CMAKE_BINARY_DIR = /var/www/html/Convert/project_pgn/pgnp/build
 
 # Include any dependencies generated for this target.
 include libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/depend.make
@@ -72,16 +72,16 @@ include libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/flags.make
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/flags.make
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o: ../libs/chess-move-interface/src/CMI.cpp
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o"
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o -MF CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o.d -o CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o -c /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o"
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o -MF CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o.d -o CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o -c /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.cpp
 
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i"
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.cpp > CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.cpp > CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i
 
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s"
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.cpp -o CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.cpp -o CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s
 
 # Object files for target ChessMoveInterface
 ChessMoveInterface_OBJECTS = \
@@ -90,21 +90,22 @@ ChessMoveInterface_OBJECTS = \
 # External object files for target ChessMoveInterface
 ChessMoveInterface_EXTERNAL_OBJECTS =
 
-libs/chess-move-interface/libChessMoveInterface.so: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o
-libs/chess-move-interface/libChessMoveInterface.so: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make
-libs/chess-move-interface/libChessMoveInterface.so: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library libChessMoveInterface.so"
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ChessMoveInterface.dir/link.txt --verbose=$(VERBOSE)
+libs/chess-move-interface/libChessMoveInterface.a: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o
+libs/chess-move-interface/libChessMoveInterface.a: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make
+libs/chess-move-interface/libChessMoveInterface.a: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libChessMoveInterface.a"
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && $(CMAKE_COMMAND) -P CMakeFiles/ChessMoveInterface.dir/cmake_clean_target.cmake
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ChessMoveInterface.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build: libs/chess-move-interface/libChessMoveInterface.so
+libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build: libs/chess-move-interface/libChessMoveInterface.a
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build
 
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/clean:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface && $(CMAKE_COMMAND) -P CMakeFiles/ChessMoveInterface.dir/cmake_clean.cmake
+	cd /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface && $(CMAKE_COMMAND) -P CMakeFiles/ChessMoveInterface.dir/cmake_clean.cmake
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/clean
 
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/depend:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/www/html/Convert/project_pgn/pgnp /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface /var/www/html/Convert/project_pgn/pgnp/build /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/depend
 

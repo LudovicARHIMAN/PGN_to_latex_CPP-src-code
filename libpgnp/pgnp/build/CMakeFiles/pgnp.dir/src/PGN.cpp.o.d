@@ -1,9 +1,9 @@
 CMakeFiles/pgnp.dir/src/PGN.cpp.o: \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/PGN.cpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/PGN.cpp \
  /usr/include/stdc-predef.h \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/includes/pgnp.hpp \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/includes/HalfMove.hpp \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/includes/Types.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/build/includes/pgnp.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/build/includes/HalfMove.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/build/includes/Types.hpp \
  /usr/include/c++/11/sstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -155,8 +155,8 @@ CMakeFiles/pgnp.dir/src/PGN.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/includes/CMI.hpp \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/includes/LargeFileStream.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface/includes/CMI.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/build/includes/LargeFileStream.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \

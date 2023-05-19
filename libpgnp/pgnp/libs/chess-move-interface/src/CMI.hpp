@@ -16,13 +16,13 @@ namespace CMI {
  */
 class HalfMove {
 
-  HalfMove *parent;
-  HalfMove *mainline;
   std::vector<HalfMove *> variations;
   std::string SAN, comment;
   std::uint16_t number;
-  std::uint8_t NAG;
   bool isBlack;
+  std::uint8_t NAG;
+  HalfMove *parent;
+  HalfMove *mainline;
 
   /// @brief Set the parent of current CMI::HalfMove, only used internally
   void SetParent(HalfMove *);

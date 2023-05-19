@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o"
   "CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o.d"
+  "libChessMoveInterface.a"
   "libChessMoveInterface.pdb"
-  "libChessMoveInterface.so"
 )
 
 # Per-language clean rules from dependency scanning.

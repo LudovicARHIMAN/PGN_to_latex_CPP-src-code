@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp
+CMAKE_SOURCE_DIR = /var/www/html/Convert/project_pgn/pgnp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build
+CMAKE_BINARY_DIR = /var/www/html/Convert/project_pgn/pgnp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface//CMakeFiles/progress.marks
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles 0
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles /var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface//CMakeFiles/progress.marks
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/clean
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/preinstall
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/preinstall
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule
 .PHONY : libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ ChessMoveInterface: libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/
 
 # fast build rule for target.
 ChessMoveInterface/fast:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build
 .PHONY : ChessMoveInterface/fast
 
 src/CMI.o: src/CMI.cpp.o
@@ -135,7 +135,7 @@ src/CMI.o: src/CMI.cpp.o
 
 # target to build an object file
 src/CMI.cpp.o:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o
 .PHONY : src/CMI.cpp.o
 
 src/CMI.i: src/CMI.cpp.i
@@ -143,7 +143,7 @@ src/CMI.i: src/CMI.cpp.i
 
 # target to preprocess a source file
 src/CMI.cpp.i:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.i
 .PHONY : src/CMI.cpp.i
 
 src/CMI.s: src/CMI.cpp.s
@@ -151,7 +151,7 @@ src/CMI.s: src/CMI.cpp.s
 
 # target to generate assembly for a file
 src/CMI.cpp.s:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(MAKE) $(MAKESILENT) -f libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/build.make libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.s
 .PHONY : src/CMI.cpp.s
 
 # Help Target
@@ -177,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

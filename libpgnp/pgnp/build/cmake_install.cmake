@@ -1,4 +1,4 @@
-# Install script for directory: /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp
+# Install script for directory: /var/www/html/Convert/project_pgn/pgnp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface/cmake_install.cmake")
+  include("/var/www/html/Convert/project_pgn/pgnp/build/libs/chess-move-interface/cmake_install.cmake")
 
 endif()
 
@@ -56,5 +56,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/var/www/html/Convert/project_pgn/pgnp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,8 @@
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o: \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/LargeFileStream.cpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/LargeFileStream.cpp \
  /usr/include/stdc-predef.h \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/LargeFileStream.hpp \
- /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/Types.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/LargeFileStream.hpp \
+ /var/www/html/Convert/project_pgn/pgnp/src/Types.hpp \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/iosfwd \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \

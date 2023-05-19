@@ -6,11 +6,11 @@ HalfMove::HalfMove()
     : number(1), isBlack(false), NAG(0), parent(nullptr), mainline(nullptr) {}
 
 HalfMove::HalfMove(const std::string &SAN)
-    : number(1), isBlack(false), parent(nullptr), mainline(nullptr) {}
+    : SAN(SAN), number(1), isBlack(false), parent(nullptr), mainline(nullptr) {}
 
 HalfMove::HalfMove(const std::string &SAN, const std::string &comment,
                    std::uint16_t number, std::uint8_t NAG, bool isBlack)
-    : SAN(SAN), comment(comment), number(number), NAG(NAG), isBlack(isBlack),
+    : SAN(SAN), comment(comment), number(number), isBlack(isBlack), NAG(NAG),
       parent(nullptr), mainline(nullptr) {}
 
 HalfMove::~HalfMove() {

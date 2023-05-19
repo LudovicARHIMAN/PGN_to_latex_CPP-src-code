@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o.d"
   "CMakeFiles/pgnp.dir/src/PGN.cpp.o"
   "CMakeFiles/pgnp.dir/src/PGN.cpp.o.d"
+  "libpgnp.a"
   "libpgnp.pdb"
-  "libpgnp.so"
 )
 
 # Per-language clean rules from dependency scanning.

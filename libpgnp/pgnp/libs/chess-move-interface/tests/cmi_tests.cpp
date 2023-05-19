@@ -4,7 +4,7 @@
 using namespace CMI;
 
 #define NEW_MOVE(VAR, SAN)                                                     \
-  HalfMove *(VAR) = new HalfMove();                                            \
+  HalfMove *VAR = new HalfMove();                                            \
   (VAR)->SetSAN((SAN));
 
 HalfMove *BuildTree() {

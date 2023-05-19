@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp
+CMAKE_SOURCE_DIR = /var/www/html/Convert/project_pgn/pgnp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build
+CMAKE_BINARY_DIR = /var/www/html/Convert/project_pgn/pgnp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pgnp.dir/depend.make
@@ -72,44 +72,44 @@ include CMakeFiles/pgnp.dir/flags.make
 CMakeFiles/pgnp.dir/src/PGN.cpp.o: CMakeFiles/pgnp.dir/flags.make
 CMakeFiles/pgnp.dir/src/PGN.cpp.o: ../src/PGN.cpp
 CMakeFiles/pgnp.dir/src/PGN.cpp.o: CMakeFiles/pgnp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pgnp.dir/src/PGN.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/PGN.cpp.o -MF CMakeFiles/pgnp.dir/src/PGN.cpp.o.d -o CMakeFiles/pgnp.dir/src/PGN.cpp.o -c /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/PGN.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pgnp.dir/src/PGN.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/PGN.cpp.o -MF CMakeFiles/pgnp.dir/src/PGN.cpp.o.d -o CMakeFiles/pgnp.dir/src/PGN.cpp.o -c /var/www/html/Convert/project_pgn/pgnp/src/PGN.cpp
 
 CMakeFiles/pgnp.dir/src/PGN.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgnp.dir/src/PGN.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/PGN.cpp > CMakeFiles/pgnp.dir/src/PGN.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/html/Convert/project_pgn/pgnp/src/PGN.cpp > CMakeFiles/pgnp.dir/src/PGN.cpp.i
 
 CMakeFiles/pgnp.dir/src/PGN.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgnp.dir/src/PGN.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/PGN.cpp -o CMakeFiles/pgnp.dir/src/PGN.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/html/Convert/project_pgn/pgnp/src/PGN.cpp -o CMakeFiles/pgnp.dir/src/PGN.cpp.s
 
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.o: CMakeFiles/pgnp.dir/flags.make
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.o: ../src/HalfMove.cpp
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.o: CMakeFiles/pgnp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pgnp.dir/src/HalfMove.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/HalfMove.cpp.o -MF CMakeFiles/pgnp.dir/src/HalfMove.cpp.o.d -o CMakeFiles/pgnp.dir/src/HalfMove.cpp.o -c /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/HalfMove.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pgnp.dir/src/HalfMove.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/HalfMove.cpp.o -MF CMakeFiles/pgnp.dir/src/HalfMove.cpp.o.d -o CMakeFiles/pgnp.dir/src/HalfMove.cpp.o -c /var/www/html/Convert/project_pgn/pgnp/src/HalfMove.cpp
 
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgnp.dir/src/HalfMove.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/HalfMove.cpp > CMakeFiles/pgnp.dir/src/HalfMove.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/html/Convert/project_pgn/pgnp/src/HalfMove.cpp > CMakeFiles/pgnp.dir/src/HalfMove.cpp.i
 
 CMakeFiles/pgnp.dir/src/HalfMove.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgnp.dir/src/HalfMove.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/HalfMove.cpp -o CMakeFiles/pgnp.dir/src/HalfMove.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/html/Convert/project_pgn/pgnp/src/HalfMove.cpp -o CMakeFiles/pgnp.dir/src/HalfMove.cpp.s
 
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o: CMakeFiles/pgnp.dir/flags.make
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o: ../src/LargeFileStream.cpp
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o: CMakeFiles/pgnp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o -MF CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o.d -o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o -c /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/LargeFileStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o -MF CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o.d -o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o -c /var/www/html/Convert/project_pgn/pgnp/src/LargeFileStream.cpp
 
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/LargeFileStream.cpp > CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /var/www/html/Convert/project_pgn/pgnp/src/LargeFileStream.cpp > CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.i
 
 CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/src/LargeFileStream.cpp -o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /var/www/html/Convert/project_pgn/pgnp/src/LargeFileStream.cpp -o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.s
 
 # Object files for target pgnp
 pgnp_OBJECTS = \
@@ -120,17 +120,17 @@ pgnp_OBJECTS = \
 # External object files for target pgnp
 pgnp_EXTERNAL_OBJECTS =
 
-libpgnp.so: CMakeFiles/pgnp.dir/src/PGN.cpp.o
-libpgnp.so: CMakeFiles/pgnp.dir/src/HalfMove.cpp.o
-libpgnp.so: CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o
-libpgnp.so: CMakeFiles/pgnp.dir/build.make
-libpgnp.so: libs/chess-move-interface/libChessMoveInterface.so
-libpgnp.so: CMakeFiles/pgnp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libpgnp.so"
+libpgnp.a: CMakeFiles/pgnp.dir/src/PGN.cpp.o
+libpgnp.a: CMakeFiles/pgnp.dir/src/HalfMove.cpp.o
+libpgnp.a: CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o
+libpgnp.a: CMakeFiles/pgnp.dir/build.make
+libpgnp.a: CMakeFiles/pgnp.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libpgnp.a"
+	$(CMAKE_COMMAND) -P CMakeFiles/pgnp.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pgnp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/pgnp.dir/build: libpgnp.so
+CMakeFiles/pgnp.dir/build: libpgnp.a
 .PHONY : CMakeFiles/pgnp.dir/build
 
 CMakeFiles/pgnp.dir/clean:
@@ -138,6 +138,6 @@ CMakeFiles/pgnp.dir/clean:
 .PHONY : CMakeFiles/pgnp.dir/clean
 
 CMakeFiles/pgnp.dir/depend:
-	cd /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/CMakeFiles/pgnp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /var/www/html/Convert/project_pgn/pgnp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /var/www/html/Convert/project_pgn/pgnp /var/www/html/Convert/project_pgn/pgnp /var/www/html/Convert/project_pgn/pgnp/build /var/www/html/Convert/project_pgn/pgnp/build /var/www/html/Convert/project_pgn/pgnp/build/CMakeFiles/pgnp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pgnp.dir/depend
 

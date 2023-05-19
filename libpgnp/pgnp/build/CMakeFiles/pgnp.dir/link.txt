@@ -1,1 +1,2 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libpgnp.so -o libpgnp.so CMakeFiles/pgnp.dir/src/PGN.cpp.o CMakeFiles/pgnp.dir/src/HalfMove.cpp.o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o  -Wl,-rpath,/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/build/libs/chess-move-interface libs/chess-move-interface/libChessMoveInterface.so 
+/usr/bin/ar qc libpgnp.a CMakeFiles/pgnp.dir/src/PGN.cpp.o CMakeFiles/pgnp.dir/src/HalfMove.cpp.o CMakeFiles/pgnp.dir/src/LargeFileStream.cpp.o
+/usr/bin/ranlib libpgnp.a

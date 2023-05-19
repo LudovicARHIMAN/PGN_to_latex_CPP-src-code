@@ -1,0 +1,6 @@
+archlinux:
+  image: "archlinux:base-devel"
+  before_script:
+    - pacman -Sy cmake --noconfirm --needed
+  script:
+    - mkdir build && cd build && cmake -DCOMPILE_TESTS:BOOL=ON ../ && make && ctest

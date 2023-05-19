@@ -10,31 +10,13 @@ using namespace pgnp;
 
 
 
-int main(int argc, char* argv[]){
-
-    if (argc < 3) {
-        std::cout << "Usage: ./your_program <input_file> <output_file>\n";
-        return 1;
-    }
-
-        
-
-    std::string inputFileName = argv[1];
-    std::string outputFileName = argv[2];
-
-    std::cout << "Input file: " << inputFileName << std::endl;
-    std::cout << "Output file: " << outputFileName << std::endl;
-
-    // chemin du ficher en sortie
+int main(){
+    
     std::string outputPath = "/var/www/html/Convert/libpgnp/converted/file.tex"; // Chemin où le fichier sera enregistré
 
-
-    // creation du buffer en definissant où les donnes du buffer vont être écrites 
     std::ofstream outfile(outputPath);
     std::stringstream buffer;
     
-    
-
     PGN pgn;
     pgn.FromFile("tmp/Adams.pgn");
     
@@ -52,6 +34,7 @@ int main(int argc, char* argv[]){
             break;
         }
         
+
         
 
         // En-tete du fichier latex
@@ -69,9 +52,12 @@ int main(int argc, char* argv[]){
         << "\\usepackage{ragged2e}\n"
         << "\\begin{document}\n";
 
+
         
 
-        // Recuperer les 7 tags obligatoires
+
+
+        // Recuperer tout les 7 tags obligatoires
         
         try{
             pgn.STRCheck();
@@ -81,8 +67,7 @@ int main(int argc, char* argv[]){
             break;
         }
         
-
-
+       
         buffer
         << "\\chessevent{" << pgn.GetTagValue("Event") << "}\n"
         << "\\chessevent{" << pgn.GetTagValue("Site") << "}\n"
@@ -92,7 +77,7 @@ int main(int argc, char* argv[]){
         << "\\chessevent{" << pgn.GetTagValue("Black") << "}\n"
         << "\\chessevent{" << pgn.GetTagValue("Result") << "}\n";
 
-
+      
 
         //Tags optionnels 
 
@@ -125,18 +110,8 @@ int main(int argc, char* argv[]){
         catch(const InvalidTagName& e) {
             break;
         }
-
-        try{
-            buffer
-            << "\\chessevent{" << pgn.GetTagValue("PlyCount") << "}\n";
-            
-        }
-
-        catch(const InvalidTagName& e) {
-            break;
-        }
         
-
+        
 
         // Recuperer les coups de la partie 
 
@@ -144,48 +119,31 @@ int main(int argc, char* argv[]){
         pgn.GetMoves(m);
         
         
-
-        // En-tête du jeu actuel 
-
-        buffer 
-        <<"\\makegametitle\n"
-        <<"\\begin{multicols}{2}\n"
-        <<"\\noindent"
-        <<"\\newchessgame[id=main]\n"
-        <<"\\xskakset{style=styleC}\n";
         
-
-
         for ( int i = 0; i < m->GetLength() ; i++){
-
-            
-            
-            std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
+        std::cout << i << " move is: " << m->GetHalfMoveAt(i)->move << std::endl;
         
-            
-            // Recuperer les commentaires
+
+        // Recuperer les commentaires
             if (!m->GetHalfMoveAt(i)->comment.empty()){
-                
-
-                buffer
-                << "\\xskakcomment{\\small\texttt\\justifying{\textcolor{darkgray}{~ " << m->GetHalfMoveAt(i)->comment  << "}}}\n";
-
-
-
+                std::cout << m->GetHalfMoveAt(i)->comment << std::endl;
                         
             }
-        
+
         }
-        
-         
+
+
         
 
+
+        
+        
 
     }
     
     outfile << buffer.str();
 
-    return 0;
+    return(0);
 
     
 

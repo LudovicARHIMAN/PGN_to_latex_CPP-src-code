@@ -76,7 +76,7 @@
 <head>
     <title>Upload PGN</title>
     <script src="https://cdn.tailwindcss.com/"></script>
-    <link rel="icon" href="icons/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/icons/icon.png" type="image/x-icon">
 </head>
 <body class="bg-grey-200"> <!-- Définit une couleur de fond gris clair -->
     <div class="flex justify-center items-center min-h-screen"> <!-- Crée un conteneur qui s'étend sur au moins la hauteur de l'écran -->

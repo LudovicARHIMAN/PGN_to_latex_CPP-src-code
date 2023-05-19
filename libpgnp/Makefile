@@ -3,7 +3,7 @@ CC=g++
 all: main
 
 main: main.cpp
-	$(CC) $^ -o main -I pgnp/src -I pgnp/libs/chess-move-interface/src -L pgnp/build -lpgnp
+	$(CC) $^ -o main  pgnp/build/libpgnp.a pgnp/build/libs/chess-move-interface/libChessMoveInterface.a -I pgnp/src -I pgnp/libs/chess-move-interface/src
 
 run:
 	LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:pgnp/build ./main

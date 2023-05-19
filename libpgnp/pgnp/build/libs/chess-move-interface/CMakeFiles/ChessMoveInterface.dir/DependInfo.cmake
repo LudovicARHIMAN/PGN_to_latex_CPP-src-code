@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface/src/CMI.cpp" "libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o" "gcc" "libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o.d"
+  "/var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface/src/CMI.cpp" "libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o" "gcc" "libs/chess-move-interface/CMakeFiles/ChessMoveInterface.dir/src/CMI.cpp.o.d"
   )
 
 # Targets to which this target links.

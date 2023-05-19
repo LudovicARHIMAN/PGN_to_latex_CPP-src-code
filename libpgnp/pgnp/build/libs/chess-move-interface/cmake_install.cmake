@@ -1,4 +1,4 @@
-# Install script for directory: /home/server/Code/PGN_to_latex_CPP/libpgnp/pgnp/libs/chess-move-interface
+# Install script for directory: /var/www/html/Convert/project_pgn/pgnp/libs/chess-move-interface
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

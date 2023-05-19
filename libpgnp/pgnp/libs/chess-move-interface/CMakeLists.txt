@@ -15,10 +15,10 @@ endforeach(FILE ${HEADER_FILES})
 
 # Add target if not exists
 # This way ChessMoveInterface can be used in multiple submodules
-include_directories(src)
 file(GLOB_RECURSE SRC_CPP_FILES src/*.cpp)
 if(NOT TARGET ChessMoveInterface)
-    add_library(ChessMoveInterface SHARED ${SRC_CPP_FILES})
+    add_library(ChessMoveInterface STATIC ${SRC_CPP_FILES})
+    target_include_directories(ChessMoveInterface PUBLIC ${CMI_INCLUDE_DIR})
 endif()
 
 # Unit tests
