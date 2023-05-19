@@ -9,10 +9,17 @@
             $tmpFilePath = $file['tmp_name'];
             $name = pathinfo($filename, PATHINFO_FILENAME);
             
-            $conv_name = "$name".".tex" ; // nom du fichier convertie qui serra donné en argument au convertisseur
+            
+            
+                        
+            // path des fichiers qui serra donné en argument au convertisseur
+            
+            $in_path = "/var/www/html/Convert/libpgnp/tmp/"."$name".".pgn"; // path du ficher pgn à convertir
+            $out_path = "/var/www/html/Convert/libpgnp/converted/"."$name".".tex" ; // path du fichier convertis
+            
+           
 
-            
-            
+
             // Définir le dossier de destination
             $destinationFolder = '/var/www/html/Convert/libpgnp/tmp/';
 
@@ -29,20 +36,22 @@
             } else {
                 echo "Une erreur s'est produite lors du déplacement du fichier.";
             }
-        } else {
-            echo "Une erreur s'est produite lors du téléchargement du fichier.";
-        }
+        }    
     }
+
+
+
+    // Télécharger les fichiers convertis 
     
     $targetDirectory = '/var/www/html/Convert/libpgnp/converted';
 
     // Get the list of files in the target directory
     $files = scandir($targetDirectory);
 
-    // Exclude . and .. directories from the list
+    // Exclure les dossiers  "." et ".." de la liste
     $files = array_diff($files, array('.', '..'));
 
-    // Output the list of files
+    // affiche les fichier contenu dans le dossier 
     /*
     foreach ($files as $file) {
         echo $file . "<br>";
@@ -76,7 +85,7 @@
 <head>
     <title>Upload PGN</title>
     <script src="https://cdn.tailwindcss.com/"></script>
-    <link rel="shortcut icon" href="/icons/icon.png" type="image/x-icon">
+    <scipt src="type.js"></script>
 </head>
 <body class="bg-grey-200"> <!-- Définit une couleur de fond gris clair -->
     <div class="flex justify-center items-center min-h-screen"> <!-- Crée un conteneur qui s'étend sur au moins la hauteur de l'écran -->
