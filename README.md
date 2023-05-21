@@ -1,4 +1,4 @@
-# PGN to latex 
+# PGN to latex ♟️
 
 
 Convertis un fichier PGN (Portable Game Notion) en fichier latex grâce à une interfae web.
