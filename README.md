@@ -6,7 +6,9 @@ Convertis un fichier PGN (Portable Game Notion) en fichier latex grâce à une i
 
 # ATTENTION 
 
-Le code suivant est en parti fonctionnel mais il presente des erreur les fichier .tex convertis ne passent pas la compilation car ils  presentent des érreurs 
+Le code suivant est en partie fonctionnel, mais il présente des erreurs, les fichiers .tex convertis ne passent pas la compilation, car ils  présentent des erreurs comme des "}" en trop qui sont présentes parfois dans le code qui crée des erreurs dans la compilation. Les NAG, variations et commentaire ne sont pas pris en compte par le convertisseur 
+
+L'interface web permet de télécharger les fichiers convertis avec un bouton qui reste afficher tout les temps cela est normal nous n'avons pour l'instant pas fixer ce problème 
 
 <h3> Pre-requis </h3>
 
