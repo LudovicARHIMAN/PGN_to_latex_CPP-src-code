@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
     << "\\usepackage{ragged2e}\n\n"
     << "\\begin{document}\n\n";
 
-
+    
     
     PGN pgn;
     pgn.FromFile(in_path);
@@ -63,10 +63,7 @@ int main(int argc, char* argv[]) {
         {
             break;
         }
-        
-
-
-        
+              
 
         
 
@@ -114,7 +111,7 @@ int main(int argc, char* argv[]) {
         
         if (!tag_opt.empty()) {
 
-            buffer << "\\chessevent{" << tag_opt << "}\n";
+            buffer << "\\ECO{" << tag_opt << "}\n";
 
         }
         
@@ -135,7 +132,7 @@ int main(int argc, char* argv[]) {
         
         if (!tag_opt.empty()) {
 
-            buffer << "\\chessevent{" << tag_opt << "}\n";
+            buffer << "\\whiteelo{" << tag_opt << "}\n";
 
         }
 
@@ -156,7 +153,28 @@ int main(int argc, char* argv[]) {
         
         if (!tag_opt.empty()) {
 
-            buffer << "\\chessevent{" << tag_opt << "}\n";
+            buffer << "\\blackelo{" << tag_opt << "}\n";
+
+        }
+
+        // Effacer le contenu de la variable tampon
+        tag_opt.clear();
+
+        // Tag PlyCount
+        try {
+
+           tag_opt = pgn.GetTagValue("PlyCount");
+
+        } catch (const InvalidTagName& e) {
+
+            // tag non trouvé donc la variable tag_opt sera vide 
+
+        }
+
+        
+        if (!tag_opt.empty()) {
+
+            buffer << "\\PlyCount{" << tag_opt << "}\n";
 
         }
 
@@ -189,12 +207,12 @@ int main(int argc, char* argv[]) {
             }
 
             buffer
-            << m->GetHalfMoveAt(i)->move << " ";
+            << m->GetHalfMoveAt(i)->move << "  ";
             
            
             
             if (j != 8) {
-
+                
 
                 if(m->GetHalfMoveAt(i)->isBlack==1){
                 count+=1;
@@ -206,13 +224,14 @@ int main(int argc, char* argv[]) {
             }
 
             if (j==8){
-                
+                count++;
                 buffer
                 << "}\n";
+                
             }
 
             
-            if (i==(m->GetLength())-1) {
+            if (i==(m->GetLength()-1)) {
                 buffer
                 << "}\n";
             }
