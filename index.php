@@ -88,16 +88,7 @@
                 <label for="pgn_file" class="block text-gray-700 font-bold mb-2">Sélectionnez un fichier PGN :</label>
                 <input type="file" name="pgn_file" accept=".pgn" class="border rounded py-2 px-3 bg-gray-100 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                 <div>
-                    <?php
-                        if (is_empty($empty)!=TRUE){
-                        echo('<a id="downloadLink" href="#" onclick="downloadFile()">Télécharger le fichier latex </a>');
-                        }
-                        
-                                               
-
-
-
-                    ?>
+                    <a id="downloadLink" href="#" onclick="downloadFile()">Télécharger le fichier latex </a>
                     
                     
                 </div>
