@@ -1,7 +1,7 @@
 # PGN to latex ♟️
 
 
-Convertis un fichier PGN (Portable Game Notion) en fichier latex grâce à une interfae web.
+Convertit un fichier PGN (Portable Game Notion) en fichier latex grâce à une interfae web.
 
 
 # ⚠️ ATTENTION 
