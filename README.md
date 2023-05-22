@@ -27,7 +27,7 @@ chmod -R 777 /var/www/html/Convert
 Le repertoire /var/www/html/Convert/converted doit aussi être créer 
 
 
-<h3> L'arborescence devrais ressembler à ceci </h3>
+<h3> L'arborescence devrait ressembler à ceci </h3>
 
 ```
 
