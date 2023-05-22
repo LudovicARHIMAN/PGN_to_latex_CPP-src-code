@@ -18,7 +18,7 @@
             $out_path = "/var/www/html/Convert/libpgnp/converted/"."$name".".tex" ; // path du fichier convertis
             
             $out_name= $name.".tex"; 
-            $fileUrl = 'http://192.168.1.140/Convert/libpgnp/converted/'.$out_name;
+            $fileUrl = 'http://localhost/Convert/libpgnp/converted/'.$out_name;
             
             // Déplacer le fichier téléchargé vers le dossier de destination
             $destinationPath = $destinationFolder . $filename;
